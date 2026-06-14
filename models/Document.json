@@ -1,0 +1,6 @@
+{
+  "caseId": { "type": "ObjectId", "ref": "Case", "required": true },
+  "uploadedBy": { "type": "ObjectId", "ref": "User", "required": true },
+  "fileName": { "type": "String", "required": true },
+  "filePath": { "type": "String", "required": true }
+}
