@@ -13,8 +13,8 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ['Admin', 'Manager', 'Member'],
-      default: 'Admin', // New users default to Admin
+      enum: ['Manager', 'Agent'],
+      default: 'Agent', // New users default to Agent
     },
     refreshToken: {
       type: String,
