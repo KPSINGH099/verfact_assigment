@@ -17,10 +17,7 @@
     "type": "Date",
     "required": true
   },
-  "assignedTo": {
-    "type": "ObjectId",
-    "default": "null"
-  },
+  "assignedTo": { "type": "ObjectId", "ref": "User", "required": true },
   "status": {
     "type": "String",
     "enum": [
@@ -33,7 +30,5 @@
     ],
     "default": "New"
   },
-  "createdBy": {
-    "type": "ObjectId"
-  }
+  "createdBy": { "type": "ObjectId", "ref": "User", "required": true }
 }

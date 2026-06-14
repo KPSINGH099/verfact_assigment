@@ -8,5 +8,6 @@
     "type": "String", 
     "required": true, 
     "trim": true 
-  }
+  },
+  "authorId":{ "type": "ObjectId", "ref": "User", "required": true }
 }
