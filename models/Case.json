@@ -17,7 +17,11 @@
     "type": "Date",
     "required": true
   },
-  "assignedTo": { "type": "ObjectId", "ref": "User", "required": true },
+  "assignedTo": { "type": "ObjectId", "ref": "User" },
+  "assigne":{
+    "type": "String",
+    "required": true 
+  },
   "status": {
     "type": "String",
     "enum": [
@@ -30,5 +34,8 @@
     ],
     "default": "New"
   },
-  "createdBy": { "type": "ObjectId", "ref": "User", "required": true }
+  "createdBy": { "type": "ObjectId", "ref": "User"},
+  "reviewer":{
+    "type": "String"
+  }
 }

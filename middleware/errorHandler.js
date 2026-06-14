@@ -16,7 +16,7 @@ const errorHandler = (err, req, res, next) => {
 if (err.name === 'BadRequestError') {
     return res.status(400).json({
       status: 400,
-      code: "VALIDATION_ERROR",
+      code: "BadRequestError_ERROR",
       message: err.message
     });
   }

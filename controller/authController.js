@@ -60,6 +60,7 @@ exports.login = async (req, res) => {
       {
         id: user._id,
         role: user.role,
+        userid:user.userid 
       },
       process.env.ACCESS_TOKEN_SECRET,
       {
@@ -71,6 +72,7 @@ exports.login = async (req, res) => {
       {
         id: user._id,
         role: user.role,
+        userid:user.userid 
       },
       process.env.REFRESH_TOKEN_SECRET,
       {
