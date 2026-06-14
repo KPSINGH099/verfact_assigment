@@ -1,0 +1,12 @@
+{
+  "caseId": { 
+    "type": "ObjectId", 
+    "ref": "Case", 
+    "required": true 
+  },
+  "text": { 
+    "type": "String", 
+    "required": true, 
+    "trim": true 
+  }
+}

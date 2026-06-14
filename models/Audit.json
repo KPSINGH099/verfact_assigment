@@ -1,0 +1,6 @@
+{
+  "caseId": { "type": "ObjectId", "ref": "Case", "required": true },
+  "action": { "type": "String", "required": true },
+  "fromStatus": { "type": "String", "default": null },
+  "toStatus": { "type": "String", "required": true }
+}

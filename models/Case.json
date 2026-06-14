@@ -1,0 +1,39 @@
+{
+  "clientName": {
+    "type": "String",
+    "required": true,
+    "trim": true
+  },
+  "subjectName": {
+    "type": "String",
+    "required": true,
+    "trim": true
+  },
+  "caseType": {
+    "type": "String",
+    "required": true
+  },
+  "dueDate": {
+    "type": "Date",
+    "required": true
+  },
+  "assignedTo": {
+    "type": "ObjectId",
+    "default": "null"
+  },
+  "status": {
+    "type": "String",
+    "enum": [
+      "New",
+      "Assigned",
+      "In Progress",
+      "Submitted",
+      "Cleared",
+      "Discrepant"
+    ],
+    "default": "New"
+  },
+  "createdBy": {
+    "type": "ObjectId"
+  }
+}
