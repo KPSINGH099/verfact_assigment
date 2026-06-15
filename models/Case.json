@@ -19,8 +19,7 @@
   },
   "assignedTo": { "type": "ObjectId", "ref": "User" },
   "assigne":{
-    "type": "String",
-    "required": true 
+    "type": "String"
   },
   "status": {
     "type": "String",

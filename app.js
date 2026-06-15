@@ -8,11 +8,18 @@ const auditRoutes=require('./routes/auditRoutes.js');
 const authRoutes=require("./routes/auth.js");
 const {errorHandler}=require('./middleware/errorHandler.js');
 const {verifyToken}=require('./middleware/authMiddleware.js');
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 
 // Middleware
+
+app.use(cors({
+  origin: 'http://localhost:5173', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE','PATCH'],
+  credentials: true // Allow cookies or auth headers if you need them later
+}));
 
 app.use(express.json());
 app.use(cookieParser());
